@@ -61,7 +61,7 @@ class Data extends React.Component {
       const response = await axios.get(this.state.API_URL);
       const data = response.data;
       console.log(data);
-      data.forEach((i, index, array) => {
+      data.forEach((i, index) => {
         let row = {
           id: "",
           name: "",
